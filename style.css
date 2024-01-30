@@ -1,0 +1,94 @@
+:root {
+    --font-family: "Inter";
+    --font-size-heading: 128px;
+    --font-size-subheading: 40px;
+    --font-size-button: 32px;
+    --font-size-logo: 40px;
+    --font-size-nav: 20px;
+    --font-size-speaker-name: 32px;
+    --font-size-company: 24px;
+    --font-size-description: 24px;
+
+    --color-orange: #ff7b54;
+    --color-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: var(--font-size-description);
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+header {
+    font-size: var(--font-size-company);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+
+    a {
+        color: var(--color-white);
+        text-decoration: none;
+    }
+
+    img {
+        padding-left: 1rem;
+    }
+}
+
+
+.nav {
+    margin: 2rem;
+    font-size: var(--font-size-nav);
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+}
+
+main {
+    margin-left: 8rem;
+    width: 80%;
+}
+
+.heading {
+    font-size: var(--font-size-heading);
+    font-weight: bold;
+}
+
+.date {
+    font-size: var(--font-size-description);
+}
+
+button {
+    font-size: var(--font-size-button);
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    border: none;
+    margin-top: 4rem;
+    padding: 1rem;
+
+    img {
+        align-content: end;
+    }
+}
+
+.inverted {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border: solid var(--color-white) 2px;
+}
